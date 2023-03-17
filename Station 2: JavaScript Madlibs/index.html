@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+
+    <link href="Raleway-VariableFont_wght.ttf" rel="stylesheet" />
+    <script type="text/javascript" src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Enter Your Info:</h1>
+      <hr class="thick" />
+
+      <!-- A text input field that can be accessed with the ID "nameInput" -->
+      <input type="text" id="nameInput" placeholder="Name" />
+      <br />
+      <input type="text" id="unitInput" placeholder="Unit(s)" />
+      <br />
+      <input type="text" id="rankInput" placeholder="Rank" />
+      <br />
+      <input type="text" id="badgeInput" placeholder="Favorite Merit Badge" />
+      <br />
+
+      <br />
+      <!-- A button that runs the makeCard JavaScript function when clicked. -->
+      <input type="button" value="Go!" onclick="makeCard();" />
+    </div>
+
+    <!-- 
+      This makes the name tag. Without digging into the details, it renders two
+      boxes side-by-side, in order to position the names.
+    -->
+    <div class="card">
+      <div class="float-child">
+        <div class="nameContainer" id="nameOut">Name</div>
+      </div>
+
+      <div class="float-child">
+        <div class="unit" id="unitOut">Unit</div>
+        <div class="rank" id="rankOut">Rank</div>
+        <br />
+        <div class="badgeTitle">Favorite Merit Badge:</div>
+        <div class="badge" id="badgeOut">Badge</div>
+      </div>
+    </div>
+  </body>
+</html>

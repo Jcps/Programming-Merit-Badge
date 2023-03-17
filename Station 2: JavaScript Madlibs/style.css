@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway-VariableFont_wght.ttf");
+}
+
+:root {
+  --eerie-black: #141414ff;
+  --jet: #373737ff;
+  --white: #ffffffff;
+  --rajah: #faa549ff;
+  --tart-orange: #f2564fff;
+  --light-steel-blue: #b7d0f1ff;
+}
+
+body {
+  background-color: var(--eerie-black);
+  font-family: "Raleway", sans-serif;
+}
+.card {
+  margin: 60px;
+  padding: 35px;
+  border: 4px solid var(--rajah);
+  border-radius: 25px;
+  width: 400px;
+  color: var(--rajah);
+  min-height: 100px;
+}
+
+input {
+  background-color: var(--jet);
+  color: var(--tart-orange);
+}
+
+hr.thick {
+  border: 2px solid var(--rajah);
+  border-radius: 2px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.float-child {
+  width: 190px;
+  float: left;
+  padding: 5px;
+}
+
+.nameContainer {
+  font-size: 40px;
+  overflow-wrap: break-word;
+  text-align: right;
+  min-height: 100px;
+}
+
+.unit {
+  font-weight: bolder;
+}
+.rank {
+  font-weight: bolder;
+}
+.badgeTitle {
+  font-variant: small-caps;
+  font-style: italic;
+}
